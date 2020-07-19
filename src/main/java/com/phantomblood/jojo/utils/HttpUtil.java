@@ -28,7 +28,7 @@ import java.util.*;
 
 public class HttpUtil {
 
-    private static final Logger logger = LoggerFactory.getLogger(com.patrol.utils.HttpUtil.class);
+    private static final Logger logger = LoggerFactory.getLogger(com.phantomblood.jojo.utils.HttpUtil.class);
 
 
     /**
