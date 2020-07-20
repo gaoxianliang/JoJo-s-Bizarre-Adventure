@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Map;
 
@@ -19,9 +20,8 @@ public class loginController {
     private testService testService;
 
     @RequestMapping("/")
-    @ResponseBody
-    public String login(){
-        return "helloworld";
+    public ModelAndView login() {
+        return new ModelAndView("login");
     }
 
     @RequestMapping("/user")
